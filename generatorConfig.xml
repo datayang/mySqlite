@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+  	<commentGenerator>  
+        <!-- 是否去除自动生成的注释 true：是 ： false:否 -->  
+        <property name="suppressAllComments" value="true" />  
+     </commentGenerator> 
+    <jdbcConnection connectionURL="jdbc:sqlite:D:/STS-workspace/mySqlite/mySqlite.db" driverClass="org.sqlite.JDBC" password="???" userId="???" />
+    <javaModelGenerator targetPackage="com.datayang.pojo" targetProject="mySqlite/src/main/java" />
+    <sqlMapGenerator targetPackage="mapper" targetProject="mySqlite/src/main/resources" />
+    <javaClientGenerator targetPackage="com.datayang.dao" targetProject="mySqlite/src/main/java" type="XMLMAPPER" >
+    	 <property name="enableSubPackages" value="false" /> 
+    </javaClientGenerator>
+    <table   tableName="dome" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"/>           
+  </context>
+</generatorConfiguration>
